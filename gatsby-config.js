@@ -8,7 +8,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Mithun Kannoth',
+        name: 'gatsby-default-starter',
         short_name: 'starter',
         start_url: '/',
         background_color: '#663399',
