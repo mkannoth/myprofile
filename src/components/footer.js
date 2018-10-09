@@ -6,7 +6,7 @@ const Footer = ({ children })=>(
   background: 'rgba(127, 118, 112, 0.99)',
   position: 'absolute',
   height:'154px',
-  top:'1070px',
+  top:'127%',
   width:'100%'
 }}>
 </div>

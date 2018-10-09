@@ -7,7 +7,7 @@ const ContactPage = () => (
   <Layout>
     <div style={{
 
-      'margin-left':'50px',
+      'margin-left':'4%',
       'margin-top':'100px'
     }}>
     <p>You have a business plan, but do not know how to take it to the next level.</p>
