@@ -4,8 +4,7 @@ import { Link } from 'gatsby'
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rgb(102, 130, 153)',
-      marginBottom: '1.45rem',
+      background: 'rgb(85, 108, 127)',
     }}
   >
   <div
@@ -41,10 +40,10 @@ const Header = ({ siteTitle }) => (
    transition: 'all .2s ease-in-out'
          }}
        >
-   <Link style={{'padding-left': '45rem'}} to="/about/">About</Link>
-   <Link style={{'padding-left': '1em'}} to="/work/">Work</Link>
-   <Link style={{'padding-left': '1em'}} to="/skills/">Skills</Link>
-   <Link style={{'padding-left': '1em'}} to="/contact/">Contact</Link>
+   <Link style={{'padding-left': '45rem',color:'yellow','text-decoration': 'none'  }} to="/about/">About</Link>
+   <Link style={{'padding-left': '2em',color:'yellow','text-decoration': 'none' }} to="/work/">Work</Link>
+   <Link style={{'padding-left': '2em',color:'yellow','text-decoration': 'none' }} to="/skills/">Skills</Link>
+   <Link style={{'padding-left': '2em',color:'yellow','text-decoration': 'none' }} to="/contact/">Contact</Link>
        </div>
 
     </div>
