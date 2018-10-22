@@ -1,15 +1,26 @@
 import React from 'react'
+import '../styles/footer.css'
+import Img from 'gatsby-image'
+import {graphql} from 'gatsby'
+import { Container,Row,Col,Nav,NavItem,NavLink} from 'reactstrap'
 
 const Footer = ({ children })=>(
 
-<div style={{
-  background: 'rgba(127, 118, 112, 0.99)',
-  position: 'absolute',
-  height:'154px',
-  top:'127%',
-  width:'100%'
-}}>
+<div className="footer">
+  <Container>
+    <Row>
+      <Col sm="12" md={{ size: 6, offset: 3 }}>
+        <a href="https://www.facebook.com/mithun.kannoth.1" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/mithunkannoth" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-twitter"></a>
+      </Col>
+    </Row>
+  </Container>
+
 </div>
+
 )
 
 export default Footer

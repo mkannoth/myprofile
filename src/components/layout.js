@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+
 import Header from './header'
 import Footer from './footer'
-import './layout.css'
+import '../styles/layout.css'
 
 
 const Layout = ({ children }) => (
@@ -25,7 +26,13 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'keywords', content: 'Entrepreneur, Software Engineer' },
+          ]}
+
+          link={[
+            {
+              rel:'stylesheet',href:'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
+            }
           ]}
         >
           <html lang="en" />
@@ -34,6 +41,7 @@ const Layout = ({ children }) => (
 
           {children}
         <Footer/>
+
       </>
     )}
   />

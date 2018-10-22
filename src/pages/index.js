@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import {graphql} from 'gatsby'
 
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
@@ -7,12 +7,13 @@ import Img from 'gatsby-image'
 const IndexPage = (props) => (
   <Layout>
     <Img fluid={props.data.file.childImageSharp.fluid}/>
-    <div style={{top: '-850px',position: 'relative','margin-top': '-1%','margin-left': '4%'}}>
-      <h3>Consultant, Entrepreneur & Mentor</h3>
+    <div style={{top: '150px',position: 'absolute','margin-top': '-1%','margin-left': '4%'}}>
+      <h3>Consultant, Entrepreneur & Freelancer</h3>
       <p>Watch for this space</p>
       <p>Updating Soon!!</p>
     </div>
   </Layout>
+
 )
 
 export default IndexPage
