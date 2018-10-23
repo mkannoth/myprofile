@@ -12,8 +12,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 12%;
+  height: auto;
   line-height: 60px; /* Vertically center the text there */
   background-color: rgba(127, 118, 112, 0.99);
 }
@@ -30,6 +29,7 @@ body > .container {
 .footer > .container {
   padding-right: 10%;
   padding-left: 10%;
+  color:white;
 
 }
 
@@ -41,10 +41,9 @@ code {
 }
 
 .fa {
-    padding: 1%;
+    padding: 2%;
     font-size: 40%;
     width: 20%;
-    padding-top: 10%;
     text-align: center;
     text-decoration: none;
 }
@@ -58,27 +57,22 @@ code {
 
 /* Facebook */
 .fa-facebook {
-    background: #3B5998;
     color: white;
 }
 
 /* LinkedIn */
 .fa-linkedin {
-    background: #007bb5;
     color: white;
 }
 
 .fa-twitter {
-    background: #55ACEE;
     color: white;
 }
 
 .fa-youtube {
-    background: #bb0000;
     color: white;
 }
 
 .fa-google {
-    background: #dd4b39;
     color: white;
 }

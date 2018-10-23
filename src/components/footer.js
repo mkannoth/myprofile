@@ -9,7 +9,8 @@ const Footer = ({ children })=>(
 <div className="footer">
   <Container>
     <Row>
-      <Col sm="12" md={{ size: 6, offset: 3 }}>
+    <Col>Copyright &#169; 2018</Col>
+    <Col>
         <a href="https://www.facebook.com/mithun.kannoth.1" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-google"></a>
         <a href="https://www.linkedin.com/in/mithunkannoth" class="fa fa-linkedin"></a>

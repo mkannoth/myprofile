@@ -6,12 +6,14 @@ import Img from 'gatsby-image'
 
 const IndexPage = (props) => (
   <Layout>
+  <div style={{position: 'relative'}}>
     <Img fluid={props.data.file.childImageSharp.fluid}/>
-    <div style={{top: '150px',position: 'absolute','margin-top': '-1%','margin-left': '4%'}}>
+    <div style={{top: '35px',position: 'absolute','margin-top': '-1%','margin-left': '4%'}}>
       <h3>Consultant, Entrepreneur & Freelancer</h3>
       <p>Watch for this space</p>
       <p>Updating Soon!!</p>
     </div>
+  </div>
   </Layout>
 
 )
