@@ -1,6 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import { Link,graphql } from 'gatsby'
 import { Collapse,NavbarToggler,Row,Col,Navbar,Nav,NavItem,NavLink,NavbarBrand } from 'reactstrap'
 
 class Header extends React.Component {

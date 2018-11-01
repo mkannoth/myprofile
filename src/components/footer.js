@@ -9,7 +9,7 @@ const Footer = ({ children })=>(
 <div className="footer">
   <Container>
     <Row>
-    <Col>Copyright &#169; 2018</Col>
+    <Col xs="auto">CopyRight &#169; 2018</Col>
     <Col>
         <a href="https://www.facebook.com/mithun.kannoth.1" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-google"></a>

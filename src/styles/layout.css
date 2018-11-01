@@ -209,6 +209,7 @@ body {
 }
 img {
   max-width: 100%;
+  min-height: 100%;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -617,9 +618,10 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  html,body {
     font-size: 100%;
+    overflow-y:hidden;
   }
 }
 
@@ -645,5 +647,5 @@ pre tt:after {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  
+
 }
