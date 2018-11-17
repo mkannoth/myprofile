@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link,graphql } from 'gatsby'
 import { Collapse,NavbarToggler,Row,Col,Navbar,Nav,NavItem,NavLink,NavbarBrand } from 'reactstrap'
+import Octicon, {Mail} from '@githubprimer/octicons-react'
 
 class Header extends React.Component {
 
@@ -20,9 +21,9 @@ class Header extends React.Component {
   }
 
   render() {
-    return (
 
-    <div style={{'background-color':'rgb(85, 108, 127)'}}>
+    return (
+    <div style={{'background-color':'rgb(183, 50, 56)','z-index':'1','width':'100%'}}>
 
         <Navbar color="faded" light expand="sm">
         <a style={{'display': 'inline-block',
@@ -33,27 +34,21 @@ class Header extends React.Component {
       'line-height': 'inherit',
       'white-space': 'nowrap',
       'color': 'white'}} href="/">Mithun Kannoth</a>
-        <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
+        <NavbarToggler onClick={this.toggleNavbar} className="ml-2" />
           <Collapse isOpen={!this.state.collapsed} navbar>
            <Nav className="ml-auto" navbar>
                  <NavItem>
                       <NavLink href="/">About</NavLink>
                  </NavItem>
                  <NavItem>
-                      <NavLink href="/work/">Work</NavLink>
+                      <NavLink href="/">Contact</NavLink>
                  </NavItem>
                  <NavItem>
-                      <NavLink href="/skills/">Skills</NavLink>
                  </NavItem>
-                 <NavItem>
-                      <NavLink href="/contact/">Contact</NavLink>
-                 </NavItem>
-
            </Nav>
            </Collapse>
          </Navbar>
          </div>
-
     )
   }
 }

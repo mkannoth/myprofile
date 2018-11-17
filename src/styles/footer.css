@@ -1,44 +1,39 @@
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: auto;
-  line-height: 75px; /* Vertically center the text there */
-  background-color: rgba(127, 118, 112, 0.99);
-}
 
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
 
-body > .container {
-  padding: 60px 15px 0;
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 991.98px) {
+  div.col-xs-12{
+
+
+  margin-top: 8rem;
 }
-
-.footer > .container {
-  padding-right: 10%;
-  padding-left: 10%;
-  color:white;
 
 }
 
-.footer > .container > .row{
-  padding-top: 2%;
+@media only screen
+and (min-width: 992px)
+and (max-width: 1198.98px) {
+  div.col-xs-12{
+
+  
+  margin-top: 7rem;
 }
-code {
-  font-size: 80%;
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .fa {
     padding: 2%;

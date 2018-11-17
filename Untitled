@@ -1,0 +1,96 @@
+import React from 'react'
+import {graphql} from 'gatsby'
+import { Button } from 'reactstrap'
+import Layout from '../components/layout'
+import Img from 'gatsby-image'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
+
+const IndexPage = (props,data) => (
+  <Layout>
+    <div style={{position:'relative'}}>
+
+          <div class="row no-gutters">
+              <div class="col-lg-4 col-md-5">
+                <Img fluid={props.data.file.childImageSharp.fluid}/>
+              </div>
+              <div class="col-lg-8 col-md-7">
+                  <div class="d-flex flex-column">
+                      <div style={{top: '35px','margin-top': '-1%','margin-left': '4%'}}>
+
+                        <h1 class="display-4">I &#39; m, Mithun Kannoth</h1>
+                        <p class="lead">Techie, Entrepreneur, Consultant..</p>
+                        <hr class="my-4"/>
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <a class="btn btn-primary btn-lg" href={props.data.allFile} role="button">Download CV</a>
+                      </div>
+                  </div>
+              </div>
+
+
+          </div>
+
+          <div class="row">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </Layout>
+
+)
+
+export default IndexPage
+
+export const query = graphql`
+  query {
+    file(relativePath: { regex: "/Mithun-copy-2/" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
+export const query1 = graphql`
+  query {
+  allFile(filter: { relativePath: { eq: "Skills.jpg" } }){
+    edges{
+      node{
+         publicURL
+      }
+    }
+  }
+
+  file(relativePath: { regex: "/Mithun-copy-2/" }) {
+    childImageSharp {
+      # Specify the image processing specifications right in the query.
+      # Makes it trivial to update as your page's design changes.
+      fluid(maxWidth: 1500) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+
+}
+`

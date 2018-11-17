@@ -1,26 +1,24 @@
 import React from 'react'
 import '../styles/footer.css'
-import Img from 'gatsby-image'
-import {graphql} from 'gatsby'
-import { Container,Row,Col,Nav,NavItem,NavLink} from 'reactstrap'
+import { Container,Row,Col} from 'reactstrap'
 
 const Footer = ({ children })=>(
 
-<div className="footer">
-  <Container>
-    <Row>
-    <Col xs="auto">CopyRight &#169; 2018</Col>
-    <Col>
-        <a href="https://www.facebook.com/mithun.kannoth.1" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-google"></a>
-        <a href="https://www.linkedin.com/in/mithunkannoth" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-youtube"></a>
-        <a href="#" class="fa fa-twitter"></a>
-      </Col>
-    </Row>
-  </Container>
+<footer style={{'background-color':'rgba(21, 20, 20, 0.99)'}}>
 
-</div>
+    <div class="col-xs-12 py-3">
+      <div class="d-flex flex-row flex-center">
+          <a href="https://www.facebook.com/mithun.kannoth.1" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="https://www.linkedin.com/in/mithunkannoth" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-twitter"></a>
+      </div>
+    </div>
+
+    <div class="text-center text-white py-3">Designed by Mithun Kannoth</div>
+
+</footer>
 
 )
 
