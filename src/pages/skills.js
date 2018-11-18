@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Progress } from 'reactstrap';
 import Layout from '../components/layout'
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
+
 
 const SkillsPage = () => (
   <Layout>

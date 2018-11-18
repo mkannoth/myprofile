@@ -1,6 +1,11 @@
 import React from 'react'
 import '../styles/footer.css'
-import { Container,Row,Col} from 'reactstrap'
+//import '../../node_modules/jquery/dist/jquery.slim.min.js'
+//import '../../node_modules/popper.js/dist/popper.min.js'
+//import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+//import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
+
+
 
 const Footer = ({ children })=>(
 

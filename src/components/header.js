@@ -1,7 +1,14 @@
 import React from 'react'
 import { Link,graphql } from 'gatsby'
-import { Collapse,NavbarToggler,Row,Col,Navbar,Nav,NavItem,NavLink,NavbarBrand } from 'reactstrap'
-import Octicon, {Mail} from '@githubprimer/octicons-react'
+//import { Collapse,NavbarToggler,Navbar,Nav,NavItem,NavLink,NavbarBrand } from 'reactstrap'
+//import '../../node_modules/jquery/dist/jquery.slim.min.js'
+//import '../../node_modules/popper.js/dist/popper.min.js'
+//import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+//import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
+
+import { Navbar,NavbarToggler,Collapse,Nav,NavItem,NavLink} from 'reactstrap'
+
+
 
 class Header extends React.Component {
 

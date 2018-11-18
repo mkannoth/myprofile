@@ -1,10 +1,13 @@
 import React from 'react'
 import {graphql} from 'gatsby'
-import { Button } from 'reactstrap'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
+//import '../../node_modules/jquery/dist/jquery.slim.min.js'
+//import '../../node_modules/popper.js/dist/popper.min.js'
+//import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+//import '../../node_modules/bootstrap/dist/js/bootstrap.min.js'
+
+
 
 
 export default ({ data }) => {
